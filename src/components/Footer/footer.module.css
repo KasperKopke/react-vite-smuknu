@@ -1,0 +1,26 @@
+.h1 {
+  font-size: 99px;
+}
+
+.wrapper {
+  background-color: #d9d9d9;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 2%;
+}
+
+.ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  list-style-type: none;
+  gap: 20px;
+  font-size: 37px;
+}
+
+.ul li a {
+  color: white;
+}

@@ -1,0 +1,81 @@
+.ul {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  padding: 1% 2%;
+  border-radius: 0 0 20px 20px;
+  background-color: rgba(0, 0, 0, 0.897);
+  gap: 20px;
+  flex-direction: column;
+  position: fixed;
+  width: 100%;
+}
+
+.smukNuLogo {
+  max-width: 200px;
+}
+.navTopUl {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  list-style-type: none;
+  height: 100%;
+  gap: 20px;
+  padding: 0 2%;
+}
+
+.navTopUl li a {
+  color: black;
+  font-size: 18px;
+  text-decoration: none;
+  font-weight: 700;
+}
+
+.navTopUl li:first-child {
+  margin-right: auto;
+  margin-top: 10px;
+}
+
+.nav {
+  height: 80px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  position: fixed;
+  width: 100%;
+  z-index: 9999;
+  background-color: white;
+}
+
+.linkItems {
+  color: #fff;
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 18px;
+  width: 100%;
+  text-align: end;
+}
+
+.linkItems:hover {
+  color: #fa96aa;
+}
+
+.icon {
+  font-size: 35px;
+  color: #fa96aa;
+}
+
+.topNumber {
+  position: absolute;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  top: -15px;
+  background-color: #fa96aa;
+  border-radius: 50%;
+  color: white;
+  padding: 0px 5px;
+}
+
+.topNumberWrapper {
+  position: relative;
+}
