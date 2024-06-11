@@ -11,6 +11,12 @@
   width: 100%;
 }
 
+@media screen and (max-width: 768px) {
+  .ul {
+    padding: 3% 5%;
+  }
+}
+
 .smukNuLogo {
   max-width: 200px;
 }

@@ -1,9 +1,10 @@
+import Member from "../../components/Member/member";
 import styles from "./homepage.module.css";
 
 const HomePage = () => {
   return (
     <div className={styles.wrapper}>
-      <h1 className={styles.h1}>Forside</h1>
+      <Member></Member>
     </div>
   );
 };
