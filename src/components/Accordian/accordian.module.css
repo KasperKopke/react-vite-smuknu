@@ -1,0 +1,49 @@
+.ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 5% 0;
+}
+
+.ul li {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 5% 5% 5% 0%;
+  border-top: 1px solid #fa96aa;
+  border-bottom: 1px solid #fa96aa;
+}
+
+.icon {
+  font-size: 55px;
+  color: #d9d9d9;
+}
+
+.button {
+  background-color: transparent;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+
+.ul li h2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  font-weight: 500;
+}
+
+.accordianText {
+  display: none;
+}
+
+.accordianText.active {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 0 4% 0 21%;
+}
