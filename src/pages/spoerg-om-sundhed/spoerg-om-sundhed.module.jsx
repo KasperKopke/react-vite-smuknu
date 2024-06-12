@@ -1,6 +1,7 @@
 import styles from "./spoerg-om-sundhed.module.css";
 import PageHeader from "../../components/pageHeader/pageHeader";
 import Member from "../../components/Member/member";
+import Accordian from "../../components/Accordian/accordian";
 
 const SpoergOmSundhed = () => {
   return (
@@ -19,6 +20,7 @@ const SpoergOmSundhed = () => {
         toptxtColor={"whiteTxt"}
         bottomTextColor={"whiteBottomTxt"}
       ></PageHeader>
+      <Accordian></Accordian>
       <Member></Member>
     </div>
   );

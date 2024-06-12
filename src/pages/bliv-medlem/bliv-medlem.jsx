@@ -1,4 +1,4 @@
-import Accordian from "../../components/Accordian/accordian";
+import Form from "../../components/form/form";
 import PageHeader from "../../components/pageHeader/pageHeader";
 import styles from "./bliv-medlem.module.css";
 
@@ -19,7 +19,7 @@ const BlivMedlem = () => {
         toptxtColor={"pinkTxt"}
         bottomTextColor={"blackBottomTxt"}
       ></PageHeader>
-      <Accordian></Accordian>
+      <Form></Form>
     </div>
   );
 };

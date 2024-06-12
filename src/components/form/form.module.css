@@ -1,0 +1,102 @@
+.formWrapper {
+  padding: 5%;
+  display: inline-block;
+  width: 100%;
+}
+
+.label {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+  margin: 5% 0%;
+  font-size: 18px;
+  border-radius: 0;
+}
+
+.input {
+  width: 100%;
+  height: 40px;
+  padding: 5px;
+  background-color: transparent;
+  border: 1.7px solid gray;
+  font-size: 16px;
+  margin-top: 10px;
+  color: black;
+}
+
+.textAra {
+  width: 100%;
+  height: 250px;
+  padding: 5px;
+  background-color: transparent;
+  border: 1.7px solid gray;
+  font-size: 16px;
+  margin-top: 10px;
+  color: black;
+}
+
+.formWrapper button {
+  padding: 0px 40px;
+  height: 40px;
+  background-color: #fa96aa;
+  color: white;
+  font-size: 16px;
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+}
+
+.image {
+  width: 100%;
+}
+
+.btn {
+  background-color: #fa96aa;
+  padding: 15px 35px;
+  width: 100%;
+  text-align: center;
+  font-weight: 600;
+  border-radius: 30px;
+  text-decoration: none;
+  color: #ffffff;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px,
+    rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+  margin-top: 20px;
+}
+
+.Txt {
+  font-size: 18px;
+  font-weight: 500;
+  max-width: 60%;
+  text-align: center;
+  color: black;
+}
+
+.image {
+  width: 180px;
+  border: 5px solid #fa96aa;
+  object-fit: cover;
+  height: 180px;
+  border-radius: 50%;
+  margin: 15px 0px;
+}
+.susccesMessage {
+  margin-bottom: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 5%;
+  gap: 15px;
+}
+
+.susccesMessage h1 {
+  font-size: 55px;
+}
+
+.name {
+  font-size: 19px;
+  font-weight: 700;
+  color: #fa96aa;
+}

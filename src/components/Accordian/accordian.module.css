@@ -1,26 +1,33 @@
 .ul {
   display: flex;
-  justify-content: center;
-  align-items: center;
+  justify-content: flex-start;
+  align-items: flex-start;
   flex-direction: column;
+
   padding: 5% 0;
 }
 
 .ul li {
   display: flex;
-  justify-content: center;
-  align-items: center;
   flex-direction: column;
-  padding: 5% 5% 5% 0%;
-  border-top: 1px solid #fa96aa;
+  gap: 20px;
   border-bottom: 1px solid #fa96aa;
+  padding: 4%;
+  width: 90%;
+  margin: 0 5%;
+}
+
+.ul li:first-child {
+  border-top: #fa96aa 1px solid;
 }
 
 .icon {
-  font-size: 55px;
+  font-size: 45px;
   color: #d9d9d9;
 }
-
+.iconActive {
+  color: #fa96aa;
+}
 .button {
   background-color: transparent;
   border: none;
@@ -30,14 +37,24 @@
 
 .ul li h2 {
   display: flex;
-  justify-content: center;
+
   align-items: center;
   gap: 20px;
   font-weight: 500;
+  font-size: 20px;
 }
 
 .accordianText {
   display: none;
+}
+
+.activeItem {
+  font-weight: bold;
+  color: #fa96aa;
+}
+
+.activeText {
+  color: #000; /* black color */
 }
 
 .accordianText.active {
@@ -45,5 +62,5 @@
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  padding: 0 4% 0 21%;
+  padding: 0 4% 0 11%;
 }

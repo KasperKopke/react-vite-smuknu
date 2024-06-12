@@ -1,0 +1,17 @@
+.wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 160px;
+  font-size: 30px;
+}
+
+.switchme {
+  flex-direction: column-reverse;
+}
+
+.bottomHeadline {
+  color: #fa96aa;
+  margin-top: -10px;
+}

@@ -1,6 +1,7 @@
 import styles from "./produkter.module.css";
 import PageHeader from "../../components/pageHeader/pageHeader";
 import Member from "../../components/Member/member";
+import SectionHeadline from "../../components/section-headline/sectionHeadline";
 const Produkter = () => {
   return (
     <div className={styles.wrapper}>
@@ -18,6 +19,11 @@ const Produkter = () => {
         toptxtColor={"blackTxt"}
         bottomTextColor={"blackBottomTxt"}
       ></PageHeader>
+      <SectionHeadline
+        blackHeadline={"ALT ER"}
+        pinkHeadline={"SKØNHED"}
+        /*  switchme={"switchme"} */
+      ></SectionHeadline>
       <Member></Member>
     </div>
   );
