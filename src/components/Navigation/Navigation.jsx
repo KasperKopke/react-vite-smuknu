@@ -6,18 +6,18 @@ import { FaBurger } from "react-icons/fa6";
 
 const Navigation = () => {
   const [isNavOpen, setNavOpen] = useState(false);
-  const [count, setCount] = useState(0);
+  const [isBasketOpen, setBasketOpen] = useState(false);
 
   const handleNav = () => {
     setNavOpen(!isNavOpen);
   };
 
-  const handleCloseNav = () => {
-    setNavOpen(false);
+  const handleBasket = () => {
+    setBasketOpen(!isBasketOpen);
   };
 
-  const handleIncrement = () => {
-    setCount(count + 1);
+  const handleCloseNav = () => {
+    setNavOpen(false);
   };
 
   return (
@@ -34,17 +34,12 @@ const Navigation = () => {
         </li>
 
         <li>
-          <a href="#" onClick={handleIncrement}>
-            +1
-          </a>
-        </li>
-        <li>
           <div className={styles.topNumberWrapper}>
-            <a href="#">
+            <a href="#" onClick={handleBasket}>
               <IoBasket className={styles.icon} />
             </a>
             <div className={styles.topNumber}>
-              <p>{count}</p>
+              <p>0</p>
             </div>
           </div>
         </li>
@@ -82,6 +77,24 @@ const Navigation = () => {
           >
             BLIV MEDLEM
           </NavLink>
+        </ul>
+      )}
+      {isBasketOpen && (
+        <ul className={styles.ulList}>
+          <li className={styles.listItem}>
+            <img src="./headers/front.jpg" alt="" />
+            <p className={styles.productTxt}>
+              Forlængende vandafvisende mascara
+            </p>
+            <div className={styles.priceTagItem}>
+              <p>100 kr</p>
+            </div>
+          </li>
+
+          <div className={styles.priceWrapper}>
+            <p className={styles.price}>i alt:</p>
+            <p className={`${styles.price} ${styles.priceTag}`}> 100 kr</p>
+          </div>
         </ul>
       )}
     </nav>
