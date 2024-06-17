@@ -7,7 +7,7 @@ const SpoergOmSundhed = () => {
   return (
     <div className={styles.wrapper}>
       <PageHeader
-        topImageSrc={"abouthealth.jpg"}
+        backgroundImage={"./headers/front.jpg"}
         toptxt={"SPØRG OM SUNDHED"}
         middleTxt={"Herunder har vi samlet spørgsmål og svar om sundhed."}
         /*  btnLink={"#"}

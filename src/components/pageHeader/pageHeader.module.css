@@ -5,7 +5,6 @@
 .pageHeaderBox.white-theme {
   background-color: #f7f0f2;
 }
-
 .pageHeaderBox {
   padding: 3% 8%;
   display: flex;
@@ -16,7 +15,6 @@
   font-weight: 400;
   height: 600px;
 }
-
 .topImg {
   width: 100%;
   object-fit: cover;
@@ -89,4 +87,13 @@
   box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px,
     rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
   margin: 10px 20px;
+}
+
+.sectionWrapper {
+  height: 800px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }

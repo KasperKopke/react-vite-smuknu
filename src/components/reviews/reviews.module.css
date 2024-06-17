@@ -1,0 +1,32 @@
+.reviewWrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.review {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  max-width: 85%;
+  text-align: center;
+}
+
+.disc {
+  margin-bottom: 20px;
+}
+
+.review hr {
+  width: 100%;
+  height: 1px;
+  border: #fa96aa solid 1px;
+  margin: 20px 0px;
+}
+
+.reviewImage {
+  margin-bottom: 35px;
+  border-radius: 50%;
+  border: 9px #fa96aa solid;
+}
