@@ -1,24 +1,41 @@
 import { NavLink } from "react-router-dom";
 import styles from "./Navigation.module.css";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { IoBasket } from "react-icons/io5";
 import { FaBurger } from "react-icons/fa6";
+import BasketList from "../basket/basketListItem";
+import { useBasket } from "../../hooks/useBasketHook";
 
 const Navigation = () => {
   const [isNavOpen, setNavOpen] = useState(false);
   const [isBasketOpen, setBasketOpen] = useState(false);
+  const { basket } = useBasket();
 
-  const handleNav = () => {
+  const handleNav = (e) => {
+    e.preventDefault();
     setNavOpen(!isNavOpen);
+    setBasketOpen(false);
   };
 
-  const handleBasket = () => {
+  const handleBasket = (e) => {
+    setNavOpen(false);
+    e.preventDefault();
     setBasketOpen(!isBasketOpen);
   };
+  console.log(basket.length.toString());
+
+  useEffect(() => {
+    if (basket.length > 0) {
+      setBasketOpen(true);
+      setNavOpen(false);
+    }
+  }, [basket]);
 
   const handleCloseNav = () => {
     setNavOpen(false);
   };
+
+  const totalPrice = basket.reduce((acc, item) => acc + item.price, 0);
 
   return (
     <nav className={styles.nav}>
@@ -35,17 +52,17 @@ const Navigation = () => {
 
         <li>
           <div className={styles.topNumberWrapper}>
-            <a href="#" onClick={handleBasket}>
+            <a href="#" onClick={(e) => handleBasket(e)}>
               <IoBasket className={styles.icon} />
             </a>
             <div className={styles.topNumber}>
-              <p>0</p>
+              <p>{basket.length}</p>
             </div>
           </div>
         </li>
 
         <li>
-          <a onClick={handleNav} href="#">
+          <a onClick={(e) => handleNav(e)} href="#">
             <FaBurger className={styles.icon} />
           </a>
         </li>
@@ -70,6 +87,7 @@ const Navigation = () => {
           >
             SPØRG OM SUNDHED
           </NavLink>
+
           <NavLink
             className={styles.linkItems}
             onClick={handleCloseNav}
@@ -81,19 +99,12 @@ const Navigation = () => {
       )}
       {isBasketOpen && (
         <ul className={styles.ulList}>
-          <li className={styles.listItem}>
-            <img src="./headers/front.jpg" alt="" />
-            <p className={styles.productTxt}>
-              Forlængende vandafvisende mascara
-            </p>
-            <div className={styles.priceTagItem}>
-              <p>100 kr</p>
-            </div>
-          </li>
+          <BasketList></BasketList>
 
           <div className={styles.priceWrapper}>
             <p className={styles.price}>i alt:</p>
-            <p className={`${styles.price} ${styles.priceTag}`}> 100 kr</p>
+            <p className={`${styles.price} ${styles.priceTag}`}></p>
+            <p>{totalPrice} kr.</p>
           </div>
         </ul>
       )}

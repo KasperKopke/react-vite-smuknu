@@ -8,17 +8,17 @@ const Produkter = () => {
     <div className={styles.wrapper}>
       <PageHeader
         backgroundImage={"./headers/front.jpg"}
-        toptxt={"SKØNHED FOR ALLE"}
-        middleTxt={"Herunder har vi samlet spørgsmål og svar om sundhed."}
-        btnLink={"#"}
-        btnTxt={"Se udvalgte produkter"}
+        toptxt={"SKØNNE PRODUKTER"}
+        middleTxt={"Herunder finder du alle vores produkter"}
+        /*    btnLink={"#"}
+        btnTxt={"Se udvalgte produkter"} */
         /*  bottomTxt={
           "Mange spørgsmål kommer fra medlemmer af smuknu.dk og andre er gode råd valgt af vores skønhedsredaktion"
         } */
 
-        bgColor={"white-theme"}
-        toptxtColor={"blackTxt"}
-        bottomTextColor={"blackBottomTxt"}
+        bgColor={"black-theme"}
+        toptxtColor={"whiteTxt"}
+        bottomTextColor={"whiteBottomTxt"}
       ></PageHeader>
       <SectionHeadline
         blackHeadline={"ALT ER"}

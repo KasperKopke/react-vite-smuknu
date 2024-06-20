@@ -91,7 +91,6 @@
   object-fit: cover;
   height: 60px;
   border-radius: 13px;
-  margin-right: auto;
 }
 
 .listItem {
@@ -109,6 +108,7 @@
 .productTxt {
   font-weight: 600;
   font-size: 15px;
+  margin-right: auto;
 }
 .priceTagItem {
   margin-top: auto;
@@ -141,7 +141,7 @@
   justify-content: flex-start;
   align-items: center;
   width: 100%;
-  padding: 2%;
+  padding: 2% 5%;
 
   bottom: 0;
 

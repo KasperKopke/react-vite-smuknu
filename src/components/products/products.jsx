@@ -1,5 +1,6 @@
 import { useState, useEffect } from "react";
 import styles from "./products.module.css";
+import { useBasket } from "../../hooks/useBasketHook";
 
 const Products = () => {
   const [products, setProducts] = useState([]);
@@ -15,8 +16,17 @@ const Products = () => {
     getProducts();
   }, []);
 
+  const { basket, addItem } = useBasket();
+
   const addToBasket = (product) => () => {
-    console.log(product._id);
+    addItem({
+      "title": product.title,
+      "price": product.price,
+      "image": product.image,
+
+      "_id": product._id,
+      "quantity": 1,
+    });
   };
 
   return (
